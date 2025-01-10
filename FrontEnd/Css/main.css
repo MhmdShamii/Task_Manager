@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main_Color:#292a2d;
+    --text_Color:#ffff;
+}
+body{
+    background-color: var(--main_Color);
+    color: var(--text_Color);
+}
