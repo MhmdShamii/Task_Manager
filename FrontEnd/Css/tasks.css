@@ -1,0 +1,92 @@
+.container{
+    width: 100%;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.container > div {
+    background-color: var(--non_Active);
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    gap: 10px;
+}
+
+.container > div > .status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container > div > .status > p {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.container > div > .status.todo > p{
+    background-color: var(--red);
+}
+.container > div > .status.progress > p{
+    background-color: var(--orange);
+}
+.container > div > .status.done > p{
+    background-color: var(--green);
+}
+
+.container > div:has(.status.todo)::-webkit-scrollbar{
+    width: 4px;
+}
+.container > div:has(.status.todo)::-webkit-scrollbar-thumb{
+    background-color: var(--red);
+    border-radius: 5px;
+} 
+.container > div:has(.status.progress)::-webkit-scrollbar{
+    width: 4px;
+}
+.container > div:has(.status.progress)::-webkit-scrollbar-thumb{
+    background-color: var(--orange);
+    border-radius: 5px;
+} 
+.container > div:has(.status.done)::-webkit-scrollbar{
+    width: 4px;
+}
+.container > div:has(.status.done)::-webkit-scrollbar-thumb{
+    background-color: var(--green);
+    border-radius: 5px;
+} 
+
+.task{
+    width: 100%;
+    background-color: var(--Active);
+    border-radius: 10px;
+    padding: 10px;
+}
+.task .header{
+    display:  flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid var(--non_Active);
+    padding: 0px 0px 10px 0px;
+    gap: 10px;
+}
+
+.task .header > h3{
+    color: var(--active_Text);
+    flex: 1;
+}
+.task .header .priority {
+    background-color: var(--red);
+    padding:0px 10px;
+    border-radius: 50px;
+    /* font-size: 14px; */
+}
+.task .header .time {
+    display: flex;
+    align-items: center;
+    background-color: var(--orange);
+    padding: 0px 5px;
+    border-radius: 50px;
+}

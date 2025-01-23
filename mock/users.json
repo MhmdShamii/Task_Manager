@@ -1,0 +1,44 @@
+{
+    "users":[
+        {
+        "id":1,
+        "FirstName":"Mhmd",
+        "LastName":"Shami",
+        "email":"MhmddShamii@gmail.com",
+        "password":"132004",
+        "roll": "Admin",
+        "points" : 2000,
+        "img":"../../mock/UsersImgs/MhmdImg.jpeg"
+        },
+        {
+        "id":2,
+        "FirstName":"Mahmoud",
+        "LastName":"Jomaa",
+        "email":"Mahmoud.jomaa@gmail.com",
+        "password":"11199",
+        "roll": "Employee",
+        "points" : 1500,
+        "img":"../../mock/UsersImgs/mhmoud.jpeg"
+        },
+        {
+        "id":3,
+        "FirstName":"Mostafa",
+        "LastName":"Akkad",
+        "email":"Mostafa.Akkad@gmail.com",
+        "password":"20042005",
+        "roll": "Employee",
+        "points" : 150,
+        "img":"../../mock/UsersImgs/mostafa.jpeg"
+        },
+        {
+        "id":4,
+        "FirstName":"Qamar",
+        "LastName":"Shami",
+        "email":"Qamar.shami@gmail.com",
+        "password":"amani123",
+        "roll": "Admin",
+        "points" : 1500,
+        "img":"../../mock/UsersImgs/MhmdImg.jpeg"
+        }
+    ]
+}

@@ -1,13 +1,107 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-:root{
-    --main_Color:#292a2d;
-    --text_Color:#ffff;
+:root {
+  --main_Color: rgb(7 7 7);
+  --sec_Color: rgb(41 41 41);
+  --non_Active:rgb(47 47 47);
+  --Active:rgb(60, 60, 60);
+  --text_Color: rgb(255 255 255);
+  --active_Text : rgb(83, 193, 253);
+  --green:rgb(65 201 95);
+  --orange:rgb(249, 172, 85);
+  --red:rgb(255, 88, 88);
 }
-body{
-    background-color: var(--main_Color);
+body {
+  background-color: var(--main_Color);
+  color: var(--text_Color);
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  display: flex;
+}
+.main{
+    overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar{
+    width: 10px;
+}
+.main::-webkit-scrollbar-thumb{
+    background-color: var(--Active);
+    border-radius: 10px;
+}
+
+.User_Dash_board_Table{
+    border-collapse: collapse;
+    margin: 25px 0px;
+    text-align: center;
+    width: 100%;
+    min-width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+nav{
+    height: 100vh;
+    width: 280px;
+    background-color: var(--sec_Color);
+    padding: 20px;
+    display:  flex;
+    flex-direction: column;
+    gap: 20px;
+}
+nav .logo{
+    color: var(--active_Text);
+    align-self: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+nav ul li{
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+    background-color: var(--non_Active);
+    padding: 10px;
+    color:  var(--text_Color);
+    cursor: pointer;
+    border-radius: 5px;
+}
+nav ul li a {
+    text-decoration:  none;
     color: var(--text_Color);
+    display: flex;
+    align-items: center;
+    transition: .20s;
+}
+nav ul li a svg{
+    transition: .20s;
+    margin-right: 10px;
+}
+nav ul li.Active a{
+    color: var(--active_Text);
+}
+nav ul li.Active a svg{
+    fill: var(--active_Text);
+}
+
+nav ul li:hover a{
+    color: var(--active_Text);
+}
+nav ul li:hover a svg{
+    fill: var(--active_Text);
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+.main h1{
+    color:  var(--active_Text);
 }

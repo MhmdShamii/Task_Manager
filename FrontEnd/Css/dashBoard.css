@@ -1,0 +1,133 @@
+.main{
+    overflow-y: scroll;
+}
+
+.search{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search input{
+    padding: 10px;
+    background-color: var(--Active);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 300px;
+    margin-left: 10px;
+    color: var(--text_Color);
+}
+
+.User_Dash_board_Table thead tr th{
+    background-color: var(--non_Active);
+    padding: 10px 15px;
+}
+.User_Dash_board_Table tbody tr td.img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.User_Dash_board_Table tbody tr td.Admin p{
+    background-color: var(--green);
+    padding: 5px;
+    border-radius: 20px;
+}
+.User_Dash_board_Table tbody tr td.Employee p{
+    background-color: var(--orange);
+    padding: 5px;
+    border-radius: 20px;
+}
+.User_Dash_board_Table tbody tr td.Edit svg{
+    fill: rgba(249, 172, 85, 0.57);
+    pointer-events: none;
+}
+.User_Dash_board_Table tbody tr td.Delete svg{
+    fill: var(--red) ;
+    pointer-events: none;
+}
+.User_Dash_board_Table tbody tr td.Edit,
+.User_Dash_board_Table tbody tr td.Delete{
+    cursor: pointer;
+}
+
+.User_Dash_board_Table tbody tr td{
+    padding: 10px;
+}
+.User_Dash_board_Table tbody tr{
+    padding: 10px;
+    background-color: var(--Active);
+}
+.User_Dash_board_Table tbody tr:nth-child(even){
+    padding: 10px;
+    background-color: var(--non_Active);
+}
+
+
+.Edit_Tab{
+    width: 400px;
+    height: 500px;
+    background-color: rgba(41, 41, 41, 0.873);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.397);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.hidden{
+    display: none;
+}
+.Edit_Tab >div{
+    display: flex;
+    flex-direction: column;
+}
+.Edit_Tab > div >input{
+    outline: none;
+    background-color: var(--Active);
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    color: var(--text_Color);
+    font-size: 16px;
+}
+.Edit_Tab > div >select{
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: var(--Active);
+    color: var(--text_Color);
+    text-align: center;
+}
+.Edit_Tab > button{
+    padding: 15px 10px;
+    bottom: 0;
+    background-color: var(--active_Text);
+    color: var(--text_Color);
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+.add{
+    width:30px;
+    height: 30px;
+    background-color: var(--non_Active);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .25s;
+}
+.add > svg {
+    pointer-events: none;
+}
+.add:hover{
+    background-color:var(--green);
+}
