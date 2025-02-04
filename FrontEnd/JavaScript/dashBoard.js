@@ -9,6 +9,7 @@ async function fetchData() {
     .then((data) => data.json())
     .then((data) => (datas = data));
   datas.users.forEach((e) => {
+    console.log(e);
     append(e);
   });
 }
